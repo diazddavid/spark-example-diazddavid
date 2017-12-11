@@ -92,7 +92,7 @@ public class MockitoTests {
 		verify(c, atLeastOnce()).compareTo(5);
 		verify(c, atLeast(1)).compareTo(5);
 	}
-
+// Comentario 
 
 	@Test(expected=IOException.class)
 	public void MockOutputStreamWriterRethrowsAnExceptionFromOutputStream() 
