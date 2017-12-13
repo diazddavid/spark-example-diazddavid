@@ -1,4 +1,4 @@
-package urjc_isi.pruebasMockito;
+package urjc.isi.pruebasMockito;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNull;
@@ -31,7 +31,7 @@ public class MockitoTests {
 		assertEquals(10, list.size()); // Primera llamada
 		assertEquals(20, list.size()); // Segunda llamada
 		assertEquals(20, list.size()); // Tercera llamada y 
-		      						   // subsiguientes devuelven el mismo valor
+		      						  // subsiguientes devuelven el mismo valor
 		
 		verify(list, times(3)).size();
 	}
@@ -92,7 +92,7 @@ public class MockitoTests {
 		verify(c, atLeastOnce()).compareTo(5);
 		verify(c, atLeast(1)).compareTo(5);
 	}
-// Comentario 
+
 
 	@Test(expected=IOException.class)
 	public void MockOutputStreamWriterRethrowsAnExceptionFromOutputStream() 
